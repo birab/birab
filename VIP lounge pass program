@@ -1,0 +1,79 @@
+import java.util.Scanner;
+public class IfElse {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("The VIP Lounge.");
+		
+		System.out.println("Age:");
+		double Age = scanner.nextDouble();
+		
+		System.out.println("DO you have a VIP pass yes/no?");
+		String PassOut = scanner.next();
+		
+		
+		if (Age >= 18 && PassOut.equals("yes")|| Age <= 80 ){  // insert Strings in if conditions
+			System.out.println("You are good to go.");
+			
+		}
+		else{
+			System.out.print("Not enough requirement");
+			
+		}
+		
+		// new system // 
+		
+		/*System.out.println("Welcome to the Roller coster.");
+	
+		System.out.print("What is your height?");
+		double height = scanner.nextDouble();
+		 
+		/* -At least one has to be true
+		 || - (LOgical OR)
+		  true || true - true
+		  true || false - true
+		  false || true - true
+		  false || false - false
+		 && - (Logical AND)
+		 - Both have to be true
+		 true && true - true
+		 true && false - false
+		 false && false - false
+		 false && false - false    */
+		
+		
+		
+		/*if (height > 3 && height <= 6.1){
+		System.out.println("You are good. Enjoy the ride.");
+		}
+
+		else {
+			System.out.println("Your height is not suitable.");
+		}*/
+		
+		
+	/* if (height < 3 || height >= 6.1){
+		 System.out.println("Insufficient Height.");
+	 }
+	 else {
+		 System.out.print("Enjoy the ride");
+		 
+	 }*/
+	
+	 
+	 /*if (height < 3){
+			System.out.println("Insufficient Height. Thank you for taking part");
+		}
+		else if (height >= 6.1){
+			System.out.print("You are too tall. Thank you for taking part");
+		}
+		else{
+			System.out.print("Enjoy the ride today. Thank you");
+			
+		}*/
+		
+		
+	}// end of method
+
+}/* End of class*/
